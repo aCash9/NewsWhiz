@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/screen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/screen"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                style="@style/text"
+                android:fontFamily="@font/adamina"
+                android:text="Latest News"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/link"
+                android:layout_alignParentEnd="true"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                style="@style/link_icon"
+                android:rotation="125"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:contentDescription="button to switch"
+                tools:ignore="HardcodedText" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_below="@id/heading"
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:paddingLeft="40dp"
+                style="@style/screen"
+                android:paddingRight="40dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categories"
+                android:layout_below="@id/viewPager"
+                style="@style/screen"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_below="@id/categories"
+                style="@style/screen"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

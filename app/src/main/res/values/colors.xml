@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#121212</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF3A44</color>
+    <color name="secondary">#0080FF</color>
+    <color name="semi_transparent">#80FFFFFF</color> <!-- 50% transparent black -->
+    <color name="back_color">#FFFFFFFF</color>
+
+</resources>

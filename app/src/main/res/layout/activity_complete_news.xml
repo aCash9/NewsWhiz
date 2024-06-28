@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    style="@style/screen"
+    android:layout_height="match_parent"
+    tools:context=".CompleteNews">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        style="@style/screen"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            android:layout_height="350dp"/>
+
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="32dp"
+            android:layout_centerVertical="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/back_icon"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custom_back_button"
+            android:layout_alignParentStart="true"
+            android:layout_height="32dp"/>
+
+        <RelativeLayout
+            android:layout_below="@id/image"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-30dp"
+            style="@style/screen"
+            android:background="@drawable/custom_news_body"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/body1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="15dp"
+                style="@style/text"
+                android:layout_marginEnd="15dp"
+                android:text="Your news article is being summarised......."
+                android:fontFamily="@font/nunito_semibold"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/blurView"
+            android:layout_below="@id/image"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/custom_title_blurr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday, 12th June 2020"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:letterSpacing="0.03"
+                    android:layout_below="@id/date"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crypto investors should be prepared to lose all their money, BOE governor says"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/adamina"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_below="@id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Published by Ryan Browne"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/nunito"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+        </eightbitlab.com.blurview.BlurView>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="28dp"
+            style="@style/text"
+            android:layout_below="@id/blurView"
+            android:layout_marginEnd="28dp"
+            android:textSize="15dp"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="5dp"
+            android:text="Your news article is being summarised......."
+            android:fontFamily="@font/nunito_semibold"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+</ScrollView>

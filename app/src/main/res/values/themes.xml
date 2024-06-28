@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TechNews" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.TechNews" parent="Base.Theme.TechNews" />
+
+    <style name="screen">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="back_color">
+        <item name="android:color">@color/white</item>
+    </style>
+    <style name="link_icon">
+        <item name="android:background">@drawable/baseline_link_24</item>
+    </style>
+
+</resources>
